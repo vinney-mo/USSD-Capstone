@@ -1,11 +1,19 @@
 const mongoose = require('mongoose');
 
-const dataSchema = new mongoose.Schema({
-  numberField: {
+const SampleSchema = new mongoose.Schema({
+  amount: {
     type: Number,
     required: true
   },
-  stringField: {
+  data: {
+    type: String,
+    required: true
+  },
+  minutes: {
+    type: Number,
+    required: true
+  },
+  allInOneBundles: {
     type: String,
     required: true
   }
