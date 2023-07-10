@@ -4,7 +4,7 @@ const dataModel = require('./../model/data');
 const router = express.Router();
 
 // CRUD Operations
-router.post('/', async function (req, res) {
+router.post('/data', async function (req, res) {
     const data = new dataModel({
         title: req.body.title,
         description: req.body.description,
